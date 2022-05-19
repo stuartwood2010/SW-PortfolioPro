@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Teko:wght@600&display=swap');
+:root {
+    --primary: rgb(0, 0, 0);
+    --secondary: rgb(0, 247, 255); 
+    --light: rgb(219, 219, 219);
+    --headerFont: 'Teko', sans-serif;
+    --bodyFont: 'Play', sans-serif;
+}
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    color: var(--primary);
+    background-color: var(--light);
+    font-family: var(--bodyFont);
+    margin: 0;
+}
+/* Navbar Styling */
+#header {
+    display: flex;
+    height: 100px;
+    background-color: var(--primary);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--headerFont);
+    padding: 0;
+    margin: 0;
+}
+#name {
+    text-align: left;
+    font-family: var(--headerFont);
+    font-size: 72px;
+    font-weight: bold;
+    color: var(--secondary);
+    margin: 10px,
+}
+#title {
+    text-align: center;
+    font-size: 36px;
+    color: var(--light);
+    margin: 10px;
+}
+.navlinks {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    list-style-type: none;
+    font-size: 24px;
+    padding: 0;
+}
+.navlink a {
+    color: var(--light);
+    text-decoration: none;
+    margin-right: 30px;  
+}
+.navlink a:hover {
+    color: var(--secondary);
+    text-decoration: underline;
+}
+/* About Me Styling */
+#aboutMe {
+    display: flex;
+    flex-direction: row;
+}
+#profileImg {
+    display: flex;
+    height: calc(100vh - 100px)
+}
+#bio {
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;    
+}
+/* Contact Me Styling */
+#contactMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+h2 {
+    font-family: var(--headerFont);
+    margin: 24px;
+    font-weight: bold;
+    font-size: 64px;
+    text-decoration: underline;
+}
+p {
+    font-size: 24px;
+    margin: 24px;
+}
+.contactLinks {
+    margin: 24px;
+    padding: 0;
+}
+.contactLink {
+    font-size: 32px;
+    list-style-type: none;
+}
+/* My Work Styling */
+.containerWork {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+.myWork {
+    border: 1px solid var(--secondary);
+    border-radius: 25px;
+    background-color: var(--primary);
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;  
+}
+.title {
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-family: var(--headerFont);
+    font-size: 44px;
+    /* text-decoration: underline; */
+    border-bottom: 1px solid var(--secondary);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin: 10px 0;
+}
+.work-img {
+    display: flex;
+    justify-self: center;
+    height: 300px;
+    width: 600px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.links {
+    display: flex;
+    justify-content: space-evenly;
+}
+.appLink {
+    color: var(--light);
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-decoration: none; 
+    justify-content: space-evenly;
+}
+.appLink:hover {
+    color: var(--secondary)
+}
+@media (max-width: 1000px) {
+    #header {
+        height: 100%;
+        flex-direction: column;
+    }
+    #name {
+        margin: 0 auto;
+    }
+    #aboutMe {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #profileImg {
+        width: 500px;    
+    }
+}
